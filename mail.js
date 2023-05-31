@@ -11,20 +11,35 @@ console.log('js-ok');
 const arraymail=['ciao@gmail.com','bella@gmail.com','marco@gmail.com','giovanni@gmail.com','claudio@gmail.com'];
 
 console.log(arraymail);
-const usermail= prompt('scrivi la tua mail').trim();
+const usermail= document.getElementById('mail');
+const resultElement= document.getElementById('msg');
+const buttonElement = document.getElementById('button')
+
+
+
+buttonElement.addEventListener('click', function(){
+let result='non puoi accedere'
+const mailvalue= usermail.value;
+
 
 
 for(i = 0 ; i < arraymail.length ; i++){
-    const mail = arraymail[i];
-    if(usermail === mail){
-    result= 'benvenuto'
-    }
-    else{
-    result= 'non puoi accedere'
-    }
     
+    
+    
+    const mail = arraymail[i];
+    if(mailvalue === mail){
+    result= 'benvenuto';
+    }
+   
 }
+
 console.log(result);
+resultElement.innerText=result;
+}
+);
+
+
 
 
 
