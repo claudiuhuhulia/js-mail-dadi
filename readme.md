@@ -10,3 +10,5 @@
     - **ALTRIMENTI** messaggio 'non pui accedere' 
 
 ## Dadi ##
+- Generiamo 2 numeri random da 1 a 6
+- Stampiamo il giocatore con il numero più alto 
